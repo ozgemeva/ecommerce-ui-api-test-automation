@@ -1,48 +1,27 @@
-# Ecommerce UI & API Tests
-A maintainable test automation framework for an e-commerce application, covering both UI flows (login, cart, checkout) and API validations.
+# End-to-End E-commerce Test Automation Framework
 
-# Features:
- - **UI Tests with Selenium + Cucumber + TestNG**
- - **API Tests with RestAssured / HTTP client**
- - **Page Object Model (POM) structure**
- - **Reusable utilities (waits, driver factory, reporting)**
- - **Parallel execution with TestNG**
- - **CI/CD process Jenkins**
- - **Test reports (TestNG HTML, ExtentReports)**
+A comprehensive test automation framework for e-commerce applications, supporting both UI and API testing with Selenium WebDriver, REST Assured, and BDD practices.
 
-# Project Structure
-src
- ├── main/java
- │    └── Utils          # DriverFactory, ReusableMethods
- ├── test/java
- │    ├── pages          # Page Object classes
- │    ├── stepdefinitions # Cucumber step defs
- │    └── runner         # TestNG runner classes
- └── test/resources
-      └── features       # Cucumber .feature files
+## 🚀 Features
 
-# How to Run
- - **Clone repo**
- - **git clone https://github.com/ozgemeva/ecommerce-ui-api-tests.git**
- - **cd ecommerce-ui-api-tests**
- - **Install dependencies (Maven project):**
--mvn clean install
--Run all tests:
--mvn test
+- **Full Stack Testing**: UI & API test automation in one framework
+- **BDD Approach**: Cucumber with Gherkin syntax for business-readable scenarios
+- **Cross-Browser Support**: Chrome, Firefox, Edge browsers
+- **CI/CD Ready**: Jenkins integration for continuous testing
+- **Professional Reporting**: Allure Reports with detailed test analytics
+- **Design Patterns**: Page Object Model (POM) for maintainable code
+- **Parallel Execution**: Faster test execution across multiple browsers
 
-# Example Scenarios
-- **Login: user can sign up / login successfully**
-- **login: user can sign up API / login successfully**
-- **Register: user can sign up / login successfully** 
-- **Register: create user API response**
+## 🛠 Tech Stack
 
-### Test Reports
-- **ExtentReport (recommended):** `/reports/ExtentReport.html`
-- **TestNG Default Report:** `/test-output/index.html` (auto-generated)
+- **Programming Language**: Java 11
+- **UI Automation**: Selenium WebDriver 4.x
+- **API Testing**: REST Assured
+- **BDD Framework**: Cucumber 7.x
+- **Test Runner**: TestNG
+- **Build Tool**: Maven
+- **CI/CD**: Jenkins
+- **Reporting**: Allure Reports
+- **Version Control**: Git/GitHub
 
-# Reports
-- **After test execution:  test-output/ contains TestNG HTML reports**
-- **ExtentReports / Allure (if enabled)**
-- ### 📊 Example Report (ExtentReports)
-![Extent Report Screenshot](docs/images/ExtentReport.png)
-
+## 📁 Framework Structure
