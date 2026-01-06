@@ -1,6 +1,10 @@
 # End-to-End E-commerce Test Automation Framework
-
 A comprehensive test automation framework for e-commerce applications, supporting both UI and API testing with Selenium WebDriver, REST Assured, and BDD practices.
+
+## 🧠 Design Decisions
+- UI and API tests are separated intentionally to follow the test pyramid.
+- User registration business logic is validated via API for speed and stability.
+- UI tests focus only on navigation and critical user interactions.
 
 ## Features
 
