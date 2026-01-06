@@ -42,10 +42,10 @@ public class RegistrationPage {
 	}
 
 	public boolean isOnHomePage() {
-		wait.until(ExpectedConditions.urlContains(TestData.BASE_URL));
+		wait.until(ExpectedConditions.urlContains(TestData.base_url));
 		Url = driver.getCurrentUrl();
-		System.out.println(" --> currentUrl : " + Url + " Base_Url : " + TestData.BASE_URL);
-		return Url.contains(TestData.BASE_URL);
+		System.out.println(" --> currentUrl : " + Url + " Base_Url : " + TestData.base_url);
+		return Url.contains(TestData.base_url);
 	}
 
 	public void clickSignUp_button() {

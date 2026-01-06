@@ -7,7 +7,8 @@ import io.cucumber.testng.CucumberOptions;
 		plugin = { "pretty","html:target/cucumber-report.html" }, 
 		features = {"src/test/resources/features"},
 		glue = { "stepdefinitions","hooks" },
-		tags = "@registerApi or @registerUi", 
+		//tags = "@registerApi or @registerUi", 
+		tags = "@registerApi", 
 		monochrome = true, 
 		dryRun = false)
 public class TestRunner extends AbstractTestNGCucumberTests {

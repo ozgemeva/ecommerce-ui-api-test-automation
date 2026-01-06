@@ -22,7 +22,7 @@ public class RegisterUISteps {
 	public void userIsOnHomePage() {
 		registerDriver = DriverFactory.getDriver();
 		registrationPage = new RegistrationPage(registerDriver);
-		registerDriver.get(TestData.BASE_URL);
+		registerDriver.get(TestData.base_url);
 		Assert.assertTrue(registrationPage.isOnHomePage(), "Not on home page!");
 	}
 
